@@ -1,0 +1,7 @@
+@import url('../node_modules/normalize.css/normalize.css');
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
