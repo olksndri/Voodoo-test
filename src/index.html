@@ -4,18 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VooDoo Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./input.css" />
     <script type="module" src="./index.js"></script>
   </head>
 
-  <body>
-    <header>
-      <div>
-        <button type="button" class="bg-black">Sign-up</button>
-        <h1 class="">Hello world!</h1>
-      </div>
+  <body class="font-grotesk relative">
+    <header
+      class="border-b border-black bg-light-sand flex p-6 flex justify-between desk:py-12 desk:px-62"
+    >
+      <include src="./partials/header.html"></include>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="bg-light-sand border-b border-black px-6 desk:px-120">
+      <include src="./partials/products-section.html"></include>
+    </main>
+    <footer
+      class="p-12 flex flex-col gap-y-12 pr-42px font-mono font-bold text-sm bg-white desk:px-120 desk:flex-row-reverse desk:gap-x-23px desk:items-center desk:py-84px"
+    >
+      <include src="./partials/footer.html"></include>
+    </footer>
+    <include src="./partials/modal.html"></include>
   </body>
 </html>
