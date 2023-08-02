@@ -18,9 +18,9 @@ const constIncrementCart = evt => {
 };
 
 const shoppingCartHandler = (item, list) => {
-  decrement = shoppingCartList.querySelectorAll('.cart_decrement');
-  increment = shoppingCartList.querySelectorAll('.cart_increment');
-  removeButton = shoppingCartList.querySelectorAll('.remove_item');
+  const decrement = shoppingCartList.querySelectorAll('.cart_decrement');
+  const increment = shoppingCartList.querySelectorAll('.cart_increment');
+  const removeButton = shoppingCartList.querySelectorAll('.remove_item');
 
   increment.forEach(el => el.removeEventListener('click', constIncrementCart));
   decrement.forEach(el => el.removeEventListener('click', constIncrementCart));
